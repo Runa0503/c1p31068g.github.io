@@ -6,6 +6,10 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>逆走回避！！</title>
+      
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        
     <!-- BootstrapのCSS読み込み(ここは削除) -->
    
     <!-- jQuery読み込み -->
@@ -20,6 +24,12 @@
     </head>
     <body>
 
+        <py-script>
+            from datetime import datetime
+            for i in range(5):
+                 print(f'【{datetime.now()}】: Pythonで出力！')
+        </py-script>
+        
         <div class="container">
             <div class="carousel slide" id="sample" data-ride="carousel">
               <ol class="carousel-indicators">
